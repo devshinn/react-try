@@ -10,8 +10,7 @@ function Slick() {
   return (
     <div tw="max-w-[800px] py-1 m-[0px auto] ">
       <br />
-			<Swiper
-				lazyPreloadPrevNext={}
+      <Swiper
         spaceBetween={"10px"}
         slidesPerView={1}
         pagination={{

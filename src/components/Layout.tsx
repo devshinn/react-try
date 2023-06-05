@@ -27,8 +27,7 @@ const S = tw.div`
 	flex
 	items-center
 	justify-between
-	bg-gradient-to-r
-	from-violet-500 to-fuchsia-50
+	bg-violet-500
 	rounded-sm
 	p-2 m-2
 `;
