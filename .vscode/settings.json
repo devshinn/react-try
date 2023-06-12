@@ -9,7 +9,9 @@
     "tw=\"([^\"]*)", // <div tw="..." />
     "tw={\"([^\"}]*)", // <div tw={"..."} />
     "tw\\.\\w+`([^`]*)", // tw.xxx`...`
-    "tw\\(.*?\\)`([^`]*)" // tw(Component)`...`
+    "tw\\(.*?\\)`([^`]*)", // tw(Component)`...`
+    "st`([^`]*)", // tw`...`
+    "st<.*?>`([^`]*)`" // tw<...>`...`
   ],
   "tailwindCSS.includeLanguages": {
     "typescript": "javascript",
