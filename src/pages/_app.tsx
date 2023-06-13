@@ -1,16 +1,11 @@
-import GlobalStyles from "@/styles/GlobalStyles";
-import "@/styles/default.css";
-import type { AppProps } from "next/app";
-import { ThemeProvider as NextThemeProvider } from "next-themes";
-import { Layout } from "@/components";
+import { AppProps } from 'next/app';
+
+import '@/styles/globals.css';
 
 export default function App({ Component, pageProps }: AppProps) {
-  return (
-    <NextThemeProvider attribute="class" defaultTheme="dark">
-      <GlobalStyles />
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
-    </NextThemeProvider>
-  );
+	return (
+		<main>
+			<Component {...pageProps} />
+		</main>
+	);
 }

@@ -1,33 +1,32 @@
-import { ThemeToggle } from "@/lib";
+import Link from 'next/link';
+import React from 'react';
 
-import dynamic from "next/dynamic";
-import Link from "next/link";
-import React from "react";
-import tw from "twin.macro";
+import { st } from '@/lib';
+import { ThemeToggle } from '@/ui';
 
 interface Props {
-  children: React.ReactNode;
+	children: React.ReactNode;
 }
 export const Layout = ({ children }: Props) => {
-  return (
-    <div>
-      <S>
-        <div>
-          <Link href="/"> Home</Link>
-          <Link href="/slick"> slick</Link>
-        </div>
-        <ThemeToggle />
-      </S>
-      {children}
-    </div>
-  );
+	return (
+		<div>
+			<div className={S}>
+				<div>
+					<Link href='/'> Home</Link>
+					<Link href='/slick'> slick</Link>
+				</div>
+				<ThemeToggle />
+			</div>
+			{children}
+		</div>
+	);
 };
 
-const S = tw.div` 
+const S = st` 
 	flex
 	items-center
 	justify-between
 	bg-violet-500
 	rounded-sm
 	p-2 m-2
-`;
+`();

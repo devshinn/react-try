@@ -1,20 +1,17 @@
 {
-  "scss.validate": false,
-  "editor.quickSuggestions": {
-    "strings": true
-  },
-  "editor.autoClosingQuotes": "always",
-  "tailwindCSS.experimental.classRegex": [
-    "tw`([^`]*)", // tw`...`
-    "tw=\"([^\"]*)", // <div tw="..." />
-    "tw={\"([^\"}]*)", // <div tw={"..."} />
-    "tw\\.\\w+`([^`]*)", // tw.xxx`...`
-    "tw\\(.*?\\)`([^`]*)", // tw(Component)`...`
-    "st`([^`]*)", // tw`...`
-    "st<.*?>`([^`]*)`" // tw<...>`...`
-  ],
-  "tailwindCSS.includeLanguages": {
-    "typescript": "javascript",
-    "typescriptreact": "javascript"
-  }
+	"scss.validate": false,
+
+	"tailwindCSS.includeLanguages": {
+		"typescript": "javascript", // if you are using typescript
+		"typescriptreact": "javascript" // if you are using typescript with react
+	},
+
+	// "editor.autoClosingQuotes": "always",
+	"tailwindCSS.experimental.classRegex": [
+		"st`([^`]*)", // tw`...`
+		"st<.*?>`([^`]*)`"
+	],
+	"editor.quickSuggestions": {
+		"strings": true // forces VS Code to trigger completions when editing "string" content
+	}
 }

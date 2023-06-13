@@ -1,6 +1,14 @@
-const withTwin = require("./withTwin.js");
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: false,
+	// basePath: '/docs',
+	// target: 'serverless',
+	compiler: {
+		swcMinify: false,
+		styledComponents: true,
+	},
+	experimental: {
+		appDir: true,
+	},
 };
 
-module.exports = withTwin(nextConfig);
+module.exports = nextConfig;

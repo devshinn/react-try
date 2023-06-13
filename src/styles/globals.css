@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	/* Your default theme */
+	--foreground: #000;
+	--browser: #fcfcfc;
+	--background: #ffffff;
+	--primary: #98d400;
+	--secondary: #6a48ff;
+	--text-color: #000;
+	--text-color-1: #1f1f1f;
+	--text-color-2: #13131387;
+	--text-color-3: #24242477;
+	--shadow-color: rgba(255, 255, 255, 0.1);
+
+	--screen-width: 500px;
+}
+
+[data-theme='dark'] {
+	--foreground: #fff;
+	--browser: #282c30;
+	--background: #1f2937;
+	--primary: #98d400;
+	--secondary: #6a48ff;
+	--text-color: #ffffff;
+	--text-color-1: #f1f1f1;
+	--text-color-2: #dbdbdb;
+	--text-color-3: #cacaca;
+
+	--shadow-color: rgba(0, 0, 0, 0.1);
+
+	--screen-width: 500px;
+}
+html,
+body,
+.__next {
+	height: 100%;
+}
+body {
+	color: var(--foreground);
+	background-color: var(--browser);
+}
