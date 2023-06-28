@@ -15,15 +15,18 @@ export const metadata = {
 
 export default function RootLayout({
 	children,
+	modal,
 }: {
 	children: React.ReactNode;
+	modal: React.ReactNode;
 }) {
 	return (
 		<html lang='ko' suppressHydrationWarning>
 			<body className={pretendard.className}>
 				<Providers>
 					<div className='h-full'>{children}</div>
-					<div className='__portal' />
+
+					<div className='__portal'>{modal}</div>
 				</Providers>
 			</body>
 		</html>

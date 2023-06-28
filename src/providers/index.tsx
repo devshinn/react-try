@@ -2,19 +2,18 @@
 
 import { ThemeProvider } from 'next-themes';
 
+import QueryProviders from './react-query';
 import RootStyleRegistry from './rootStyleRegistry';
 
 interface Props {
 	children: React.ReactNode;
 }
-export default function Providers({ children }: Props) {
+export default function ({ children }: Props) {
 	return (
-		<ThemeProvider defaultTheme='system' enableSystem={false}>
-			<RootStyleRegistry>{children}</RootStyleRegistry>
-		</ThemeProvider>
+		<QueryProviders>
+			<ThemeProvider defaultTheme='system' enableSystem={false}>
+				<RootStyleRegistry>{children}</RootStyleRegistry>
+			</ThemeProvider>
+		</QueryProviders>
 	);
-}
-
-export function Print() {
-	console.log('hello world');
 }
