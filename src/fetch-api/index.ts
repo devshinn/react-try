@@ -28,8 +28,6 @@ export async function getUser(id: string) {
 }
 
 export async function getCrawlData() {
-	console.log('request api  getCrawlData');
-
 	const res = await fetch(
 		'https://rmt2rmbupk.execute-api.ap-northeast-2.amazonaws.com/default/lambda--server-test',
 		{ cache: 'no-store' },

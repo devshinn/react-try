@@ -6,7 +6,7 @@ import Link from 'next/link';
 import React from 'react';
 
 const fetchData = async () => {
-	const res = await fetch(`/api/users`, { cache: 'force-cache' });
+	const res = await fetch(`/api/users`);
 	return res.json();
 };
 

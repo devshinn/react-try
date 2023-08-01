@@ -3,7 +3,7 @@ import { ServerStyleSheet, StyleSheetManager } from 'styled-components';
 
 export function useStyledComponentsRegistry() {
 	const [styledComponentsStyleSheet] = React.useState(
-		() => new ServerStyleSheet()
+		() => new ServerStyleSheet(),
 	);
 
 	const styledComponentsFlushEffect = () => {

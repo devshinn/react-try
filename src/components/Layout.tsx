@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import styled from 'styled-components';
 
 import { st } from '@/lib';
 import { ThemeToggle } from '@/ui';
@@ -23,10 +24,10 @@ export const Layout = ({ children }: Props) => {
 };
 
 const S = st` 
-	flex
-	items-center
-	justify-between
-	bg-violet-500
-	rounded-sm
-	p-2 m-2
+		flex
+		items-center
+		justify-between
+		bg-violet-500
+		rounded-sm
+		p-2 m-2
 `();

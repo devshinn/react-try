@@ -34,8 +34,7 @@
 	--screen-width: 500px;
 }
 html,
-body,
-.__next {
+body {
 	height: 100%;
 }
 body {

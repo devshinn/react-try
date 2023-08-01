@@ -2,7 +2,7 @@ import ZustandChild from '@/components/zustandChild';
 import ZustandTest from '@/components/zustandTest';
 import useUserStore from '@/store/userStore';
 
-export const fetchUser = async (id: number) => {
+const fetchUser = async (id: number) => {
 	const res = await fetch('http://localhost:3000/api/users/' + id);
 	return await res.json();
 };
